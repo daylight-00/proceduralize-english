@@ -6,7 +6,9 @@ This is not a chatbot you talk to. It is a system prompt, a knowledge-base layou
 
 ## Why this exists
 
-A good human tutor is bottlenecked — by hours, by memory between sessions, by patience on the hundredth rep of the same drill. Learning apps (Duolingo, Pimsleur, Glossika) escape those bottlenecks but introduce new ones: a fixed corpus that doesn't know your papers, drills tuned to a generic learner rather than your specific errors, engagement loops optimized for retention rather than learning, and a closed pedagogy you can neither inspect nor fork. An LLM with persistent state and on-demand availability shares neither set of limits — and the whole pedagogy fits in a markdown file you own. The bet here is to spend that capacity on *internalization*: building English as the way you think, not just the way you recognize, grounded in the second-language acquisition literature rather than tutor-instinct heuristics.
+The target is first-language internalization — English as the medium of thought, not just academic or professional competence. The standard routes have known ceilings. Human tutors are bottlenecked by hours, by memory between sessions, and by patience on the hundredth rep of the same drill. Apps like Duolingo, Pimsleur, and Glossika escape those bottlenecks but introduce others: a fixed corpus that doesn't know your field, drills tuned to a generic learner rather than your specific errors, engagement loops optimized for retention rather than learning, and a closed pedagogy you can neither inspect nor fork.
+
+An LLM with persistent state and on-demand availability shares neither set of limits, and the whole pedagogy fits in a markdown file you own. The bet is to spend that capacity on a pedagogy grounded in the second-language acquisition literature — proceduralization, pushed output, noticing, retrieval practice, chunk inventory — rather than tutor-instinct heuristics or engagement-tuned drill cycles.
 
 That capacity is mostly wasted today. Off-the-shelf LLM tutors fail in characteristic ways:
 
@@ -103,6 +105,10 @@ Anti-sycophancy and anti-drift guardrails draw on contemporary work on LLM failu
 - **Not multi-learner.** One learner per directory; compounding personalization breaks if multiple people share a KB.
 - **Not a substitute for human conversation.** Native interlocutors do things this system can't.
 - **Not a clinical or therapeutic product.** "Low-friction, gap-tolerant" is a design choice, not a diagnostic claim.
+
+## How this was built
+
+With my own felt gap, motivation, and conceptual design, the concrete realization came through Claude Opus 4.7. To me, this is the work that matters in the LLM era — if you carry the idea, you can build the tool for it.
 
 ## License
 
